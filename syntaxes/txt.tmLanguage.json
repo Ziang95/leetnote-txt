@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "txt",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns":[
+				{
+					"name": "keyword.control.txt",
+					"match": "if|while|for|return"
+				},
+				{
+					"name": "entity.name.class",
+					"match": "Easy"
+				},
+				{
+					"name": "keyword.other.Medium",
+					"match": "Medium"
+				},
+				{
+					"name": "invalid",
+					"match": "Hard"
+				},
+				{
+					"name": "keyword.control.txt",
+					"match": "Tips"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\*"
+				},
+				{
+					"name": "keyword.other",
+					"match": "url"
+				},
+				{
+					"name": "keyword.control",
+					"begin": "\\[",
+					"end": "\\]"
+				},
+				{
+					"name": "comment",
+					"begin": "\\<",
+					"end": "\\>"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.txt",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.txt",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.t"
+}
