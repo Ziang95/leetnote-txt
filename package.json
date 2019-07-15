@@ -1,11 +1,15 @@
 {
-    "name": "txt-note",
-    "displayName": "txt_note",
-    "description": "a simple *keyword highlighter* for those who want to take leetcde study note in txt format",
-    "version": "0.0.1",
+    "name": "txt_leetnote",
+    "displayName": "txt_leetnote",
+    "description": "a simple Keyword Highlighter for those who want to take leetcode study notes in txt format",
+    "version": "0.0.3",
     "publisher": "Zian",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.36.0"
+    },
+    "repository": {
+        "url": "https://github.com/zeaan/leetnote-txt"
     },
     "categories": [
         "Programming Languages"
